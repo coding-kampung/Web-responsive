@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	font-family: poppins;
+}
+.container {
+	margin: 20px auto;
+	width: 90%;
+
+}
+
+body {
+	background-color: rgba(0, 0, 0, 0.5);
+	font-size: 18px;
+}
+.header {
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	justify-content: center;
+	align-items: center;
+
+
+
+}
+.header .logo {
+	text-align: center;
+	color: cyan;
+}
+.header ul {
+	display: grid;
+	list-style: none;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-gap: 5px;
+
+}
+.header a {
+	display: block;
+	background-color: #000;
+	font-size: 0.8em;
+	text-decoration: none;
+	color: cyan;
+	text-align: center;
+	padding: 5px;
+	text-transform: uppercase;
+	border-radius: 3px;
+
+}
+
+.toko {
+	margin-top: 10px;
+	display: grid;
+	grid-template-areas: 'main main hero1'
+						 'main main hero2';
+	grid-template-columns: repeat(auto-fit, 1fr);
+	gap: 2px;
+}
+.toko .main {
+	display: grid;
+	background-image: url(img/4.jpg);
+	min-height: 450px;
+	background-size: cover;
+	background-position: center;
+	grid-area: main;
+	align-items: center;
+	justify-content: center;
+	padding: 50px;
+	border: 2px solid rgba(255,255,255, 0.5);
+}
+.toko span {
+	background-color: rgba(255,255,255,0.5);
+	padding: 5px;
+	border-radius: 5px;
+
+}
+.toko .hero1 {
+	display: grid;
+	grid-area: hero1;
+	background-image: url(img/1.jpg);
+	min-height: 200px;
+	background-size: cover;
+	background-position: center;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid rgba(255,255,255, 0.5);
+}
+.toko h4 {
+	padding: 4px;
+	background-color: rgba(0,0,0,0.5);
+	border-radius: 10px;
+	color: #eeeee4;
+	font-size: 1.5em;
+	font-weight: 200;
+	/*color: black;*/
+}
+.toko .hero2 {
+	display: grid;
+	grid-area: hero2;
+	background-image: url(img/2.jpg);
+	min-height: 200px;
+	background-size: cover;
+	background-position: center;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid rgba(255,255,255, 0.5);
+}
+
+
+
+
+
+
+
+
